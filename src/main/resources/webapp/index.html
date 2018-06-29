@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Web dictaphone</title>
+    <link href="styles/app.css" rel="stylesheet" type="text/css">
+    <link href="styles/install-button.css" rel="stylesheet" type="text/css">
+    <script src="./js/encode/amrnb.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header>
+            <h1>AudioContext录音demo</Audio>
+            </h1>
+        </header>
+
+        <section class="main-controls" id="controller">
+            <canvas class="visualizer" height="60px" id="soundWave"></canvas>
+            <div id="buttons">
+                <button class="record" id="record">开始录制</button>
+                <button class="stop" id="stop">结束</button>
+            </div>
+        </section>
+
+        <section class="sound-clips" id="audios">
+            <audio id="mySound"></audio>
+
+        </section>
+
+    </div>
+
+
+
+    <!-- <script src="js/mediaDevices-getUserMedia-polyfill.js"></script> -->
+    <script src="./js/myRecorder.js"></script>
+    <script src="./js/myPlayer.js"></script>
+    <script src="./js/mySocket.js"></script>
+
+
+</body>
+
+</html>

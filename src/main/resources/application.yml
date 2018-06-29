@@ -1,0 +1,7 @@
+
+websocket:
+   server:
+    port: 9527
+
+server:
+  port: 7788
